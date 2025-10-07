@@ -39,5 +39,6 @@ class CartPizza:
 
 
 class CartPizzaException(Exception):
-    def __Init__(self, message = "pizza not found"): 
+    def __Init__(self, message = "pizza not found"):'
+        print('karim n9ch kbir')
         super().__init__(message)

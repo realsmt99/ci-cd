@@ -1,6 +1,5 @@
-import abc
+import abc 
 from enum import Enum
-
 import math
 
 
@@ -9,8 +8,8 @@ class Personage(abc.ABC):
     def __init__(self, nom  ): 
         self.nom = nom
         self.point_de_vie = 100
-        self.position =  Position(0,0)
-        self.niveau = Utilitaires.DEBUTANT
+        self.position =  Position(0,2)
+        self.niveau = Utilitaires.TEST
 
 
     def attaquer(self, personnage):
