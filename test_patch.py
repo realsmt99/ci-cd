@@ -14,7 +14,7 @@ def test_find_expired_users(mocked_get_all_users):
     ]
     res = find_expired_users(db)
     expected_res = [3, 4, 5]
-    assert expected_res == res
+    assert expected_res == rest
 
 
 
