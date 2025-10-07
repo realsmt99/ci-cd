@@ -11,7 +11,6 @@ def test_find_expired_users(mocked_get_all_users):
         Mock(id = 20 , expiration_date = dt.datetime.now() )
         Mock(id=3, expiration_date=dt.datetime.now() - dt.timedelta(days=1)),
         Mock(id=4, expiration_date=dt.datetime.now() - dt.timedelta(days=2)),
-        Mock(id=5, expiration_date=dt.datetime.now()),
     ]
     res = find_expired_users(db)
     expected_res = [3, 4, 5,20]
